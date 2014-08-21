@@ -397,20 +397,21 @@ correspondiente a cada uno se encuentra cada integrante, clasificando las accion
 
 Para este periodo del proyecto propuesto tenemos como tarea a fin dar a conocer las posibles soluciones de cada integrante que creemos correctas al problema para llegar a un consenso general y comenzar el diseño y posterior desarrollo del proyecto.
 
-\subsection{Cuerpo}
+\subsection{Requerimientos}
 
-La plataforma a diseñar esta pensada a priori es que el usuario acceda a ella y estén todos las personas que pertenecen a la oficina, por medio de una simulación  están todos ingresados y definida la cantidad participante, en cuanto a las ausencias luego de ser arrojado el resultado será consultado el usuario si esa persona concurrió a la oficina para un posterior nuevo designado a comprar, esto aun esta en etapa de discusión y será explicado mas adelante en dicha sección.
-Como estamos en la primera fase de nuestra estrategia de desarrollo que corresponde a la planificación aun no hay pruebas ni resultados por el momento.
+Considerando todo lo anterior, debemos definir en concreto que será lo que hará nuestro sistema, cuáles serán sus funciones y sus alcances según lo hablado con el cliente, quienes tendrán acceso a modificar o agregar los datos necesarios, y cuáles serán estos, además de la manera en que estos se mostrarán a los usuarios.
+
+Es necesario antes de continuar, definir el contexto que rodea a nuestro problema, según el cual hemos desarrollado todo lo que se presenta en este documento. La empresa requiere ordenar y llevar cuentas de la compra y consumo del café de sus empleados, elegir quien es el indicado para pagar los cafés que todos se servirán ese día, teniendo en cuenta que pueden haber trabajadores que no asisten a trabajar, por lo cual, la cantidad a comprar es variable. Esto implica desarrollar un programa que sea justo y equitativo para todos los empleados, entendiendo por justo, que la diferencia entre cafés comprados y cafés consumidos no sea mayor que 4. Definimos entonces que el sistema considera como unidad “1 vaso de café”, asumiendo su precio como una constante en el tiempo.
+
+Los usuarios podrán ser ingresados o eliminados del sistemas a través de un formulario, identificándose con el nombre y el apellido, y esta misma persona podrá escoger quienes están presentes en ese momento para hacer la elección. A este individuo lo llamaremos administrador, y deberá ser especificado por la empresa contratante. Todos los demás empleados podrán ver el resultado del sorteo de ese día desde una terminal, además de gráficas de los días anteriores, entiéndase cuantos cafés ha tomado y comprado cada persona. A estos los llamaremos usuarios y no tendrán ningún derecho a modificar los datos del sistema, solo leer.
 
 \subsection{Discusión}
 En un principio para obtener una solución al problema, se dieron varias ideas con respecto al tema, como por ejemplo: generar una clase Persona, a la cual agregarle atributos como alguna variable de tipo Bool, lo que permitiría tener constancia de si la persona realizó o no una compra de café, o una variable de tipo Int, con lo que se podría llevar un registro de cuántos cafés se han comprado; utilizar un lenguaje en específico de codificación o utilizar distintos lenguajes comunicándose entre sí; generar resoluciones a partir de los requerimientos pedidos por el cliente; todo congeniando de forma que se obtengan respuestas de verificación o numéricas con respecto a la solución en sí, para obtener un desarrollo definitivo y funcional. Se buscó un método para lograr una cohesión entre todas las ideas, dando así una solución concreta, la cual deberá ser llevada a cabo según este proyecto avanza.
 
 \subsection{Conclusiones}
-Para terminar el documento debe de presentar en detalle las implicaciones del tema que desarrollo. En esta sección debe de extender las implicaciones claves que presentó en el resumen, explicando todos los detalles y repercusiones de sus argumentos. Adicionalmente, puede presentar trabajo futuro y recomendaciones en esta sección.
-
-Inicie reiterando el argumento principal del documento y presente los puntos principales y recomendaciones que desarrolló, describa como estos puntos claves (descubrimientos, temas importantes, nuevos marcos, ideas, etc.) se pueden aplicar, y describa las implicaciones de estos puntos; exprese el alcance del tema y en qué profundidad se trato en el documento, así como las limitaciones de la investigación. 
-
-En esta sección no introduzca temas nuevos, no repita la introducción ni el resumen, no realice exposiciones obvias, ni contradiga puntos que haya realizado anteriormente.
+Finalmente, el equipo decidió ocupar la estrategia de desarrollo llamada "Scrum"; pequeñas reuniones en las que se comentan las desiciones. Se ocupará el programa "github", el cual se encargará de generar una especie de carpeta en cada computador personal, de manera que los cambios en un documento se vean reflejados en los archivos de cada integrante.
+Para llevar la cuenta de las tareas completadas y las que estan aun en desarrollo (junto con las pendientes) se ocupará la aplicación "Trello" la cual es una forma simple de ver los "por hacer" y los "terminado".
+Para terminar, se determino que, con respecto al programa, este será destinado al conteo de tazas café compradas en una empresa, de manera que esta sea equitativa con respecto cantidad de tazas compradas y no a los costos; se asumirá que el precio por taza de café unitaria será fijo.
 
 \section{Elementos flotantes}
 
